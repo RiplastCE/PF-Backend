@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const url = "mongodb+srv://<rodrigoezequielboiko>:<>@rodboik.bau00.mongodb.net/";
+const url = "mongodb+srv://<rodrigoezequielboiko>:<Q4v8I76gXjznjai>@rodboik.bau00.mongodb.net/";
 
 
 const connectToDB = () => {

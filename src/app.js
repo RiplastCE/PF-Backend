@@ -1,3 +1,16 @@
+import express from 'express';
+import handlebars from 'express-handlebars';
+import { Server } from 'socket.io';
+import socketProducts from './listeners/socketProducts.js';
+import registerChatHandler from './listeners/chatHandlers.js';
+
+import routerP from './routers/products.router.js';
+import routerC from './routers/carts.router.js';
+import routerV from './routers/views.router.js';
+
+import __dirname from './utils.js';
+import connectToDB from './config/configServer.js';
+
 const app = express();
 const PORT = process.env.PORT || 8080
 
